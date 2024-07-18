@@ -205,14 +205,17 @@
                     </div>
 
                     <div>
-                        <div class="product__pride-newPride">
-                            <span class="Price">
-                                <bdi>
-                                    @string.Format("{0:N0}", item.Giakhuyenmai)
-                                    <span class="currencySymbol">₫</span>
-                                </bdi>
-                            </span>
-                        </div>
+                        @if (item.Giakhuyenmai != null)
+                        {
+                            <div class="product__pride-newPride">
+                                <span class="Price">
+                                    <bdi>
+                                        @string.Format("{0:N0}", item.Giakhuyenmai)
+                                        <span class="currencySymbol">₫</span>
+                                    </bdi>
+                                </span>
+                            </div>
+                        }
                     </div>
                 </a>
             </div>

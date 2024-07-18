@@ -33,7 +33,7 @@ namespace qlthucung.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken] 
         public IActionResult Register(Register register)
         {
             if (ModelState.IsValid)

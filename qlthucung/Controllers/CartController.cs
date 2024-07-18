@@ -158,7 +158,7 @@ namespace qlthucung.Controllers
             return Json(response);
         }
 
-        [Route("addtocart/{id}")]
+        [HttpPost("addtocart/{id}")]
         public IActionResult AddToCart(string id, IFormCollection form)
         {
             int productId = Convert.ToInt32(id);
@@ -213,7 +213,7 @@ namespace qlthucung.Controllers
             return RedirectToAction("Details","SanPham", new { id = id });
         }
 
-        [Route("remove/{id}")]
+        [HttpPost("remove/{id}")]
         public IActionResult Remove(int id)
         {
             List<Item> cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");

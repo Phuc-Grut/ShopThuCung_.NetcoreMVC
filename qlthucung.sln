@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33529.622
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qlthucung", "qlthucung\qlthucung.csproj", "{44B08327-323A-4E94-A7DF-7708D021E86A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "qlthucung", "qlthucung\qlthucung.csproj", "{44B08327-323A-4E94-A7DF-7708D021E86A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "petstoreAPI", "petstoreAPI\petstoreAPI.csproj", "{16CF53CD-7595-4B79-A7C2-82F0C966A529}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{44B08327-323A-4E94-A7DF-7708D021E86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44B08327-323A-4E94-A7DF-7708D021E86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44B08327-323A-4E94-A7DF-7708D021E86A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16CF53CD-7595-4B79-A7C2-82F0C966A529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16CF53CD-7595-4B79-A7C2-82F0C966A529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16CF53CD-7595-4B79-A7C2-82F0C966A529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16CF53CD-7595-4B79-A7C2-82F0C966A529}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

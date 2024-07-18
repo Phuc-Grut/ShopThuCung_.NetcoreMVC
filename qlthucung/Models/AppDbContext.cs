@@ -28,13 +28,13 @@ namespace qlthucung.Models
         public virtual DbSet<ThuVienAnh> ThuVienAnhs { get; set; }
         public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    if (!optionsBuilder.IsConfigured)
-        //    {
-        //        optionsBuilder.UseSqlServer("Data Source=(localdb)\\ProjectsV13;Database=petstore;Trusted_Connection=True;");
-        //    }
-        //}
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Data Source= PHUC\\SQLEXPRESS ;Database=petstore;Trusted_Connection=True;");
+            }
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
